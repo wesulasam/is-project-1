@@ -1,22 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
 <?php
-	session_start();
+
 	$db=mysqli_connect("localhost","root","","gametrack");
 					
 					
 					
 	if(isset($_POST['signup'])){
 		$fname=$_POST['fname'];
+		
 		$lname=$_POST['lname'];
 		$c_email=$_POST['c_email'];
 		$c_password=$_POST['c_password'];
 
+		$c_password=md5($c_password);
+
+
 			$sql="INSERT INTO `customer`(`first_name`, `last_name`, `email`, `password`) VALUES ('$fname','$lname','$c_email','$c_password')";
-						
-			$result  = mysqli_query($db, $sql);
-			$_SESSION['first_name']=$fname;
-			$_SESSION['success']="You are logged in";
-			echo "success ".$fname;
-	}
+				$result= $db->query($sql);
+				if ($result) {
+					header('location:signup.php');
+				}else{
+					echo "Error:" .$sql ."<br>". $db->error;
+				}
+				}
+
+
 	
 	else if(isset($_POST['loginBtn'])){
 		//if login button is clicked
@@ -58,15 +70,20 @@
 				header("Location: gametrackhome.html");
 			}
 		}else{
+
 			echo "Invalid Login";
 		}
 		
 	}
 	
-	else if(isset($_POST['logoutBtn'])){//if logout is clicked
+	else if(isset($_POST['logout'])){//if logout is clicked
 		session_destroy();
 		unset($_SESSION['first_name']);
-		header("Location: login.php");
+		header("Location:signup.php");
 	}
-	
-?>
+
+?>  
+<a href="signup.php">Try again</a>
+
+</body>
+</html>

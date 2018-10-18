@@ -12,7 +12,6 @@
 </head>
 <body>
 
-	<p id="time"></p>
 	<P>
 <form action = "perhourcharge.php" method = "post">
 		Number of hours <select name = "hours">
@@ -26,10 +25,11 @@
 			<option value = "8">8</option>
 			<option value = "9">9</option>
 			<option value = "10">10</option>
-		</select>
+		</select>		
 		<br>
 		<br>
-		Price per hour   <select name = "price">
+		
+		Price per hour <select name = "price">
 			<option value = "100">100</option>
 			<option value = "120">120</option>
 			<option value = "150">150</option>
