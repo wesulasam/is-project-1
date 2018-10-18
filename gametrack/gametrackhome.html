@@ -16,10 +16,10 @@
 	}
 	.topnav{
 		overflow:hidden;
-		background-color: #36486b;
-		padding: 50px;
+		background-color:#808080;
+		padding: 30px;
 		align-content: left;
-		font-size: 15px;
+		font-size: 30px;
 
 
 	}
@@ -34,7 +34,7 @@
 	}
 
 	.topnav a:hover{
-		background-color:black;
+		background-color:white;
 		color: purple;
 	}
 
@@ -49,10 +49,10 @@
 
 	.navbar{
 		overflow: hidden;
-		background-color: #333;
+		background-color: #808080;
 		position: fixed;
 		bottom: 0;
-		width: 100%
+		width: 140%
 	}
 
 	.navbara{
@@ -60,9 +60,9 @@
 		display: block;
 		color: #f2f2f2;
 		text-align: center;
-		padding: 14px 16px;
+		padding: 50px 50px;
 		text-decoration: none;
-		font-size: 17px;
+		font-size: 80px;
 
 
 	}
@@ -81,63 +81,23 @@
 </head>
 <body>
 
-<style type="text/css">
-				body{
-					background-color: white; 
-				}
-				div#carousel { 
-				  perspective: 1200px; 
-				  background: #618685; 
-				  padding-top: 40%; 
-				  font-size:0; 
-				  margin-bottom: 3rem; 
-				  overflow: hidden; 
-				}
-				figure#spinner { 
-				  transform-style: preserve-3d; 
-				  height: 100px; 
-				  transform-origin: 50% 50% -500px; 
-				  transition: 1s; 
-				} 
-				figure#spinner img { 
-				  width: 400%; max-width: 400px; 
-				  position: absolute; left: 30%;
-				  transform-origin: 50% 50% -500px;
-				  outline:1px solid transparent; 
-				}
-				figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
-				}
-				figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
-				figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
-				figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
-				figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
-				figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
-				figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
-				figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
-				div#carousel ~ span { 
-				  color: #fff; 
-				  margin: 0%; 
-				  display: inline-block; 
-				  text-decoration: none; 
-				  font-size: 2rem; 
-				  transition: 0.6s color; 
-				  position: relative; 
-				  margin-top: -6rem; 
-				  border-bottom: none; 
-				  line-height: 0; }
-				div#carousel ~ span:hover { color: #888; cursor: pointer; }
-			</style>
 			<div class="topnav" >
-				<a> <h1 style="color:blue;","font-size:100vw;"><em>GAMETRACK<em></h1></a>
+				<a> <h1 style="color:blue;""font-size:100vw;"><em>GAMETRACK<em></h1></a>
 					<div class ="topnav-right">
 
-		<a href="#GameTrack">GameTrack</a>>
-		<a href="Contact">Contact</a>
-		<a class = "active" href="signup.php">Myaccount</a>
+
+		<a href= "charges.php" > Charges </a>     |    <a href="customer.php">Customer</a>     |        <a href="signup.php">Myaccount</a>       
 	</div>
 		
 	</div>
-	<div style="padding-left:20px">
+
+
+<div class = "topnav-right">
+	<button type="button"name="logout" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-log-out"></span> Log out
+        </button>
+
+    </div>
 
 		<div class = "navbar">
 			<a href="https://www.instagram.com/accounts/login/">
@@ -145,16 +105,14 @@
 			</a>
 		</div>
 
-</div>
 
 			<div id="carousel">
 			  <figure id="spinner">
 			    <img src="fifa18.jpg" alt style="width:1500px;height:900px;"  >
 			    <img src="hitman.jpg" style="width:1500px;height:900px;" >
 			    <img src="mortalcombat.jpg" alt  style="width:1500px;height:900px;">
-			    <img src="nba2k18.jpg"alt  style="width:1500px;height:900px;">
 			    <img src="gta5.jpg"alt  style="width:1500px;height:900px;">
-			    <img src="james.jpg"alt  style="width:1500px;height:900px;">
+			    <img src="lebronjames.jpg"alt  style="width:1500px;height:900px;">
 
 
 
