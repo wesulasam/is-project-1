@@ -54,17 +54,8 @@
 	
 	<div class = "sidenav">
 		<a href="gametrackhomelogin.php">Home</a>
-		<a href="station1.php">Station 1</a>
-		<a href="station2.php">Station 2</a>
-		<a href="station3.php">Station 3</a>
-		<a href="station4.php">Station 4</a>
-		<a href="station5.php">Station 5</a>
-		<a href="station6.php">Station 6</a>
-		<a href="customer.php">Customer</a>
-		<a href="statistics.php">Statistics</a>
-
-
-
+		<a href="updategame.php">Update available games</a>
+		<a href="viewgame.php">view available games</a>
 	</div>
 
 </body>

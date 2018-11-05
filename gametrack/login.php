@@ -14,9 +14,9 @@
 				<br><br>
 				<input type="checkbox" name="checkB">Remember Me<br><br>
 				<input type="submit" name="loginBtn" value="login"><br><br>
-				<?php
-					include('server.php');
-				?>
+				
+				
+			
 			</form>
 		</div>	
 	</section>

@@ -53,6 +53,15 @@ include('server.php');
 				<input type="submit" name="signup" value="Signup">
 				<br>
 				<br>
+				<label>Role</label>
+				<br></br>
+				<input type="radio" name="type" value="1">Customer
+				<br></br>
+				<input type="radio" name="type" value="0">Admin
+				<br></br>
+				
+				<br>
+				<br>
 			</form>
 		</div>
 		<div class="miniPanel">
@@ -66,15 +75,11 @@ include('server.php');
 				<input type="password" name="c_password" placeholder="password" pattern=".{6,}" title="six or more characters required" required>
 				<br><br>
 				<input type="submit" name="loginBtn" value="login"><br><br>
-				<?php
-					include('server.php');
-				?>
+			
 			</form>
 		</div>
 		
 
 </section>
-<a href="signup.php">Try again</a>
-
 </body>
 </html>

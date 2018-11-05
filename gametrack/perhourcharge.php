@@ -23,7 +23,7 @@
 
 <script>
 	function gamehours(){
-		var a =document.getElementById("text");
+	    var a =document.getElementById("txt");
 		setTimeout(function(){a.value="1"},1000);
 		   
 	}

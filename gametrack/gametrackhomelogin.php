@@ -1,9 +1,7 @@
 <?php
 
-     session_start();
-
+require'connection.php';
 ?>
-<!DOCTYPE html>
 <html>
 <head>
 	<script type="text/javascript">
@@ -89,12 +87,39 @@
 			<div class="topnav" >
 				<a> <h1 style="color:blue;""font-size:100vw;"><em>GAMETRACK<em></h1></a>
 					<div class ="topnav-right">
+<center>
 
+	 	
+		 	 
+		 	 <?php
+$usertype = $_SESSION['permit']['type'];
+		 	 ?>
+		 	 
+		      <a href= "game.php" > Games </a>
+		       <a href="customer.php">Customer</a> 
+		       
+		       
+		       
 
-	<a href="signup.php">Myaccount</a>       
+		    
+		       	
+		        <a href="statistics.php">Statistics</a>
+		         <a href= "charges.php" > Charges </a> 
+
+		     
+
+		        
+		           <a href="logout.php"> <img src="logout.png" style="height: 20px; width: 20px; margin-top: 2%"> </a> 
+</center>		 
 	</div>
 		
 	</div>
+
+
+<div class = "topnav-right">
+	
+
+    </div>
 
 		<div class = "navbar">
 			<a href="https://www.instagram.com/accounts/login/">
@@ -105,7 +130,12 @@
 
 			<div id="carousel">
 			  <figure id="spinner">
-			    <img src="fifa18.jpg" alt style="width:1500px;height:900px;"  >
+			    <img src="fifa18.jpg" alt style="width:1500px;height:900px;" >
+
+
+
+		
+
 			  </figure>
 			</div>
 			<span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>

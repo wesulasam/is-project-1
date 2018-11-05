@@ -23,4 +23,22 @@
 
 		}
 	
+	if(isset($_POST['save'])){
+
+		$gametype=$_POST['gametype'];
+		$gamename=$_POST['gamename'];
+
+
+			$sql = "INSERT INTO `game`(`game_type`,`game_name`) VALUES ('$gametype','$gamename')";
+			$result = $db->query($sql);
+			if ($result) {
+				header('location:game.php');
+			}
+			else{
+				echo "Error:" .$sql . "<br>" . $db -> error;
+			}
+			
+
+		}
+	
 ?>
